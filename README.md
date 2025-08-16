@@ -8,6 +8,11 @@ A containerized Flask web application with Redis backend deployed on AWS ECS wit
 
 This project demonstrates a containerized application deployment using AWS ECS Fargate with the following comprehensive architecture that is built using Terraform:
 
+### Diagram
+
+![My App Screenshot](images/diagram.png)
+
+
 ### Development Workflow
 - **Developer**: Builds and pushes Docker images to ECR
 - **Elastic Container Registry (ECR)**: Stores versioned container images
