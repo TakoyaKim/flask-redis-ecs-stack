@@ -1,0 +1,28 @@
+#ADD HEALTH CHECK
+
+services:
+  redis:
+    image: 'redis'
+    container_name: redis-server
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+  app:
+    build: ./app
+    container_name: flask-app
+    platform: linux/amd64
+    env_file:
+      - ./env/app.env
+    ports:
+      - '9999:5000'
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:6000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+    depends_on:
+      - redis

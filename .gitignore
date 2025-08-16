@@ -1,0 +1,353 @@
+# Flask Redis ECS Stack - .gitignore
+
+# ================================
+# Terraform Files
+# ================================
+# Local .terraform directories
+**/.terraform/*
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Terraform crash log files
+crash.log
+crash.*.log
+
+# Terraform variable files (may contain sensitive data)
+*.tfvars
+*.tfvars.json
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform plan files
+*.tfplan
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# ================================
+# Python/Flask Files
+# ================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff (if using Django instead of Flask):
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ================================
+# Docker Files
+# ================================
+# Docker build context
+.dockerignore
+
+# ================================
+# AWS Files
+# ================================
+# AWS CLI credentials
+.aws/
+
+# AWS CDK
+cdk.out/
+
+# ================================
+# IDE/Editor Files
+# ================================
+# Visual Studio Code
+.vscode/
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ================================
+# Operating System Files
+# ================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+
+# ================================
+# Log Files
+# ================================
+# General logs
+*.log
+logs/
+log/
+
+# Application specific logs
+app.log
+flask.log
+redis.log
+access.log
+error.log
+
+# ================================
+# Temporary Files
+# ================================
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# ================================
+# SSL/TLS Certificates
+# ================================
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# ================================
+# Database Files
+# ================================
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Redis dumps
+dump.rdb
+
+# ================================
+# CI/CD Files
+# ================================
+# GitHub Actions
+.github/workflows/secrets.yml
+
+# Jenkins
+.jenkins
+
+# ================================
+# Monitoring/Analytics
+# ================================
+# New Relic
+newrelic.ini
+
+# ================================
+# Local Development
+# ================================
+# Local configuration files
+config.local.json
+settings.local.py
+local_config.py
+
+# Development databases
+dev.db
+development.db
+
+# Test files
+test_results/
+test_output/
+
+# ================================
+# Kubernetes (if using K8s later)
+# ================================
+# Kubernetes secrets
+k8s-secrets.yaml
+*-secret.yaml
+
+# ================================
+# Node.js (if adding frontend)
+# ================================
+# Dependency directories
+node_modules/
+
+# npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ================================
+# Custom Project Files
+# ================================
+# Add any project-specific files to ignore here
+
+# ECR login helper script (if created)
+ecr-login.sh
+
+# Local testing scripts
+test-local.sh
+deploy-local.sh
+
+# Architecture diagrams (working files)
+*.drawio.bak
+*.vsd
+*.vsdx~
